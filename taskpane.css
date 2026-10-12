@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", sans-serif; font-size: 13px; margin: 0; padding: 10px; color: #222; }
+h2 { font-size: 16px; margin: 0 0 10px; }
+h3 { font-size: 13px; margin: 14px 0 6px; }
+h3 small { font-weight: normal; color: #777; }
+label { display: block; margin-bottom: 8px; }
+input, select { width: 100%; padding: 6px; border: 1px solid #bbb; border-radius: 3px; font: inherit; }
+button { padding: 6px 12px; border: 1px solid #bbb; border-radius: 3px; background: #f3f3f3; cursor: pointer; font: inherit; }
+button.primary { background: #006699; border-color: #006699; color: #fff; }
+button.link { border: 0; background: none; color: #006699; padding: 0; }
+header { display: flex; justify-content: space-between; align-items: center; }
+.row { display: flex; gap: 6px; margin-bottom: 6px; }
+.row select:first-child { width: 70px; }
+.list { list-style: none; margin: 4px 0; padding: 0; max-height: 160px; overflow-y: auto; }
+.list li { padding: 6px; border-bottom: 1px solid #eee; cursor: pointer; }
+.list li:hover { background: #eef6fa; }
+.list li small { color: #777; display: block; }
+.selected { color: #006699; font-weight: 600; margin: 4px 0; }
+.preview { border: 1px solid #ddd; border-radius: 3px; padding: 8px; max-height: 220px; overflow-y: auto; background: #fafafa; }
+.preview mark, mark { background: #fff3b0; }
+.error { color: #b00020; }
+.status { color: #2e7d32; }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISPAG CRM</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+  <!-- Connexion -->
+  <section id="view-login" hidden>
+    <h2>Connexion ISPAG CRM</h2>
+    <label>Identifiant <input id="login-user" autocomplete="username"></label>
+    <label>Mot de passe <input id="login-pass" type="password" autocomplete="current-password"></label>
+    <button id="login-btn" class="primary">Se connecter</button>
+    <p id="login-error" class="error"></p>
+  </section>
+
+  <!-- Application -->
+  <section id="view-app" hidden>
+    <header>
+      <span id="user-name"></span>
+      <button id="logout-btn" class="link">Déconnexion</button>
+    </header>
+
+    <div class="step">
+      <h3>1. Deal <small>(facultatif)</small></h3>
+      <input id="deal-search" type="search" placeholder="Rechercher un deal (nom ou n° d'offre)">
+      <ul id="deal-results" class="list"></ul>
+      <p id="deal-selected" class="selected"></p>
+    </div>
+
+    <div class="step">
+      <h3>2. Modèle</h3>
+      <div class="row">
+        <select id="lang">
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+          <option value="en">EN</option>
+        </select>
+        <select id="folder"><option value="">Tous les dossiers</option></select>
+      </div>
+      <input id="tpl-search" type="search" placeholder="Filtrer les modèles">
+      <ul id="tpl-list" class="list"></ul>
+    </div>
+
+    <div class="step" id="step-fields" hidden>
+      <h3>3. Champs</h3>
+      <div id="fields"></div>
+      <h3>Aperçu</h3>
+      <div id="preview" class="preview"></div>
+      <div class="row">
+        <button id="insert-btn" class="primary">Insérer dans le mail</button>
+        <button id="cancel-btn">Annuler</button>
+      </div>
+      <p id="status" class="status"></p>
+    </div>
+  </section>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>
