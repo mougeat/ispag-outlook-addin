@@ -29,7 +29,7 @@
     </Sets>
   </Requirements>
   <FormSettings>
-    <Form xsi:type="ItemRead">
+    <Form xsi:type="ItemEdit">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://mougeat.github.io/ispag-outlook-addin/taskpane.html"/>
         <RequestedHeight>450</RequestedHeight>
