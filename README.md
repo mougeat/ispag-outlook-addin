@@ -12,7 +12,7 @@ Panneau latéral dans la rédaction d'un mail Outlook (bureau, web, Mac) pour in
 ## Installation
 Aucune compilation : ce sont des fichiers statiques.
 1. Publier le contenu de ce dossier en HTTPS (GitHub Pages, ou un dossier du serveur WordPress).
-2. Dans `manifest.xml`, remplacer `ADDIN_HOST` par l'hôte de publication.
+2. `manifest.xml` pointe vers `https://mougeat.github.io/ispag-outlook-addin/` ; à adapter si l'hébergement change.
 3. Installer :
    - **Pour toute l'équipe** : centre d'administration Microsoft 365 → Paramètres → Applications intégrées → *Charger des applications personnalisées* → `manifest.xml`.
    - **Pour soi-même** : Outlook → Obtenir des compléments → Mes compléments → *Ajouter un complément personnalisé* → depuis un fichier.

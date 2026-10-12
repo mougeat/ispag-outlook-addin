@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Manifeste de l'add-in Outlook « ISPAG CRM ».
-  Avant installation : remplacer https://ADDIN_HOST par l'URL où est publié ce dossier
-  (GitHub Pages, serveur WordPress, etc. — HTTPS obligatoire).
+  Hébergé sur GitHub Pages : https://mougeat.github.io/ispag-outlook-addin/ (HTTPS obligatoire).
 -->
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -15,8 +14,8 @@
   <DefaultLocale>fr-FR</DefaultLocale>
   <DisplayName DefaultValue="ISPAG CRM"/>
   <Description DefaultValue="Insérez vos modèles de mails ISPAG CRM avec les champs du deal, du contact et de l'entreprise."/>
-  <IconUrl DefaultValue="https://ADDIN_HOST/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://ADDIN_HOST/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://mougeat.github.io/ispag-outlook-addin/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://mougeat.github.io/ispag-outlook-addin/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://app.ispag-asp.ch"/>
   <AppDomains>
     <AppDomain>https://app.ispag-asp.ch</AppDomain>
@@ -32,7 +31,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://ADDIN_HOST/taskpane.html"/>
+        <SourceLocation DefaultValue="https://mougeat.github.io/ispag-outlook-addin/taskpane.html"/>
         <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -80,12 +79,12 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon16" DefaultValue="https://ADDIN_HOST/assets/icon-16.png"/>
-        <bt:Image id="Icon32" DefaultValue="https://ADDIN_HOST/assets/icon-32.png"/>
-        <bt:Image id="Icon80" DefaultValue="https://ADDIN_HOST/assets/icon-80.png"/>
+        <bt:Image id="Icon16" DefaultValue="https://mougeat.github.io/ispag-outlook-addin/assets/icon-16.png"/>
+        <bt:Image id="Icon32" DefaultValue="https://mougeat.github.io/ispag-outlook-addin/assets/icon-32.png"/>
+        <bt:Image id="Icon80" DefaultValue="https://mougeat.github.io/ispag-outlook-addin/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="TaskpaneUrl" DefaultValue="https://ADDIN_HOST/taskpane.html"/>
+        <bt:Url id="TaskpaneUrl" DefaultValue="https://mougeat.github.io/ispag-outlook-addin/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="ISPAG CRM"/>
